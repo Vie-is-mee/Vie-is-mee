@@ -2,7 +2,9 @@
 
 <!--
 **Vie-is-mee/Vie-is-mee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
+<div align="center">
+  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Profile Contrib Chart" width="100%" />
+</div>
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
