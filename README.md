@@ -13,7 +13,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Vie-is-mee&theme=onedark&no-frame=true&margin-w=4" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Vie-is-mee&theme=onedark&no-frame=true&margin-w=4" alt="GitHub Trophy" />
 </div>
 
 <div align="center">
