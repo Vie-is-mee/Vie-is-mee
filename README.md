@@ -12,10 +12,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<div align="center">
+<!-- <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Vie-is-mee&show_icons=true&theme=tokyonight&hide_border=true" alt="Vie-is-mee's GitHub Stats" />
   <img src="https://streak-stats.demolab.com/?user=Vie-is-mee&theme=tokyonight&hide_border=true" alt="Vie-is-mee's GitHub Streak" />
-</div>
+</div> -->
 
 <div align="center">
   <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile Contrib Chart" width="100%" />
