@@ -13,5 +13,9 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=<TÊN_GITHUB_CỦA_BẠN>&theme=onedark&no-frame=true&margin-w=4" />
+</div>
+
+<div align="center">
   <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile Contrib Chart" width="100%" />
 </div>
