@@ -10,7 +10,7 @@ README ưu tiên biểu đồ hoạt động và nhịp phát triển dự án, 
 | Languages | GitHub Readme Stats: tỷ lệ kích thước mã theo ngôn ngữ trong các repository công khai. Không phải thời gian code hoặc mức thành thạo. |
 | Streak | Snapshot từ GitHub Readme Streak Stats: chuỗi ngày có đóng góp của `Vie-is-mee`, theo cách tính của dịch vụ. |
 | Project activity | GitHub REST API: số commit trên nhánh mặc định của UIT-ChatBot, OneVoice-Lab, SolarOpt trong 12 tuần, gồm mọi người đóng góp. Tuần bắt đầu thứ Hai theo UTC; tuần hiện tại chưa hoàn tất. Dùng committer timestamp, mỗi hàng có thang riêng. Bấm biểu đồ để xem JSON số liệu. |
-| Contribution landscape | Ảnh 3D do workflow `profile-3d.yml` sinh từ GitHub. Có ảnh riêng cho nền sáng/tối. |
+| Contribution landscape | Ảnh 3D do workflow `profile-3d.yml` sinh từ GitHub. Dùng cố định `profile-night-green.svg`: nền tối, xanh lá như hồ sơ gốc, kể cả khi người xem dùng giao diện sáng. |
 
 Nhịp commit thể hiện hoạt động repository, không phải phần trăm hoàn thành dự án hoặc số commit riêng của An Vi. Không tự đặt các thanh “90% Python” hoặc “80% hoàn thành” khi chưa có dữ liệu phù hợp.
 
@@ -26,6 +26,8 @@ Nhịp commit thể hiện hoạt động repository, không phải phần trăm
 Nguồn dịch vụ: [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats), [GitHub Readme Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats), [GitHub Profile 3D Contrib](https://github.com/yoshi389111/github-profile-3d-contrib).
 
 ## Phạm vi
+
+Mục Tech stack & tools dùng logo SVG lưu trong `assets/tools/`, chia hai nhóm AI/ML & data và Application engineering & development. Logo lấy từ [Devicon](https://github.com/devicons/devicon), có ghi nguồn và giấy phép tại `assets/tools/NOTICE.md`. Chọn công nghệ từ portfolio và các dự án đã đối chiếu; không dùng logo để chấm mức thành thạo.
 
 Không sao chép WakaTime/AI Code Time của Blu: các dữ liệu đó thuộc tài khoản Blu. Hồ sơ này chưa được cấu hình WakaTime nên không hiển thị giờ code. Nếu bổ sung sau, cần dùng dữ liệu và khóa WakaTime của An Vi.
 

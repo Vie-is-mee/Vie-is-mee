@@ -8,6 +8,31 @@
 
 </div>
 
+## Tech stack & tools
+
+**AI / ML & data**
+
+<p>
+  <img src="./assets/tools/python.svg" height="36" width="36" alt="Python" title="Python" />&nbsp;&nbsp;
+  <img src="./assets/tools/pytorch.svg" height="36" width="36" alt="PyTorch" title="PyTorch" />&nbsp;&nbsp;
+  <img src="./assets/tools/scikitlearn.svg" height="36" width="36" alt="scikit-learn" title="scikit-learn" />&nbsp;&nbsp;
+  <img src="./assets/tools/numpy.svg" height="36" width="36" alt="NumPy" title="NumPy" />&nbsp;&nbsp;
+  <img src="./assets/tools/pandas.svg" height="36" width="36" alt="pandas" title="pandas" />&nbsp;&nbsp;
+  <img src="./assets/tools/opencv.svg" height="36" width="36" alt="OpenCV" title="OpenCV" />
+</p>
+
+**Application engineering & development**
+
+<p>
+  <img src="./assets/tools/fastapi.svg" height="36" width="36" alt="FastAPI" title="FastAPI" />&nbsp;&nbsp;
+  <img src="./assets/tools/react.svg" height="36" width="36" alt="React" title="React" />&nbsp;&nbsp;
+  <img src="./assets/tools/typescript.svg" height="36" width="36" alt="TypeScript" title="TypeScript" />&nbsp;&nbsp;
+  <img src="./assets/tools/redis.svg" height="36" width="36" alt="Redis" title="Redis" />&nbsp;&nbsp;
+  <img src="./assets/tools/sqlite.svg" height="36" width="36" alt="SQLite" title="SQLite" />&nbsp;&nbsp;
+  <img src="./assets/tools/docker.svg" height="36" width="36" alt="Docker" title="Docker" />&nbsp;&nbsp;
+  <img src="./assets/tools/git.svg" height="36" width="36" alt="Git" title="Git" />
+</p>
+
 ## GitHub at a glance
 
 <p align="center">
@@ -33,10 +58,6 @@
 
 ## Contribution landscape
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green.svg" />
-  <img src="./profile-3d-contrib/profile-green.svg" alt="An Vi's annual GitHub contribution landscape" width="100%" />
-</picture>
+<img src="./profile-3d-contrib/profile-night-green.svg" alt="An Vi's annual GitHub contribution landscape" width="100%" />
 
 <sub>Automatically updated with GitHub Actions · [How these charts work](./docs/PROFILE_GUIDE.md)</sub>
