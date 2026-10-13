@@ -85,8 +85,8 @@ def main():
     (OUTPUT / "project-activity.svg").write_text(svg, encoding="utf-8")
     (OUTPUT / "project-activity.json").write_text(json.dumps({"updated_at": now.isoformat(), "first_week": str(start), "scope": "default branch, all contributors, committer timestamp", "projects": series}, indent=2) + "\n", encoding="utf-8")
     cards = {
-        "stats.svg": "https://github-readme-stats.vercel.app/api?" + urlencode({"username": OWNER, "show_icons": "true", "hide_rank": "true", "theme": "github_dark", "hide_border": "true"}),
-        "languages.svg": "https://github-readme-stats.vercel.app/api/top-langs/?" + urlencode({"username": OWNER, "layout": "compact", "langs_count": 6, "theme": "github_dark", "hide_border": "true"}),
+        "stats.svg": "https://github-readme-stats.vercel.app/api?" + urlencode({"username": OWNER, "custom_title": "An Vi's GitHub Stats", "show_icons": "true", "include_all_commits": "true", "hide_rank": "false", "theme": "dracula", "hide_border": "false", "border_color": "e4e2e2", "border_radius": 6, "disable_animations": "true"}),
+        "languages.svg": "https://github-readme-stats.vercel.app/api/top-langs/?" + urlencode({"username": OWNER, "layout": "compact", "langs_count": 6, "theme": "dracula", "hide_border": "false", "border_color": "e4e2e2", "border_radius": 6, "card_width": 360, "disable_animations": "true"}),
         "streak.svg": "https://streak-stats.demolab.com/?" + urlencode({"user": OWNER, "theme": "github-dark-blue", "hide_border": "true"}),
     }
     failed = []
@@ -97,7 +97,8 @@ def main():
             words = " ".join(tree.itertext())
             if not tree.tag.endswith("svg") or re.search(r"something went wrong|rate limit exceeded|could not fetch|error fetching|service unavailable", words, re.I):
                 raise ValueError("Provider returned an error card")
-            (OUTPUT / name).write_bytes(data)
+            normalized = "\n".join(line.rstrip() for line in data.decode("utf-8").splitlines()) + "\n"
+            (OUTPUT / name).write_text(normalized, encoding="utf-8")
             print("Updated", name)
         except Exception as error:
             # A provider outage must not overwrite the last usable card.

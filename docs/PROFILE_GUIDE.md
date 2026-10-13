@@ -6,7 +6,7 @@ README ưu tiên biểu đồ hoạt động và nhịp phát triển dự án, 
 
 | Biểu đồ | Dữ liệu / cách đọc |
 | --- | --- |
-| GitHub stats | Snapshot từ GitHub Readme Stats, tài khoản `Vie-is-mee`; thống kê công khai theo cách tính của dịch vụ. Không dùng số liệu của Blu. |
+| GitHub stats | Snapshot từ GitHub Readme Stats, tài khoản `Vie-is-mee`; bật `include_all_commits` và vòng rank, theme Dracula nền tối/tiêu đề hồng theo mẫu. Thống kê công khai theo cách tính của dịch vụ, không dùng số liệu hoặc rank của Blu. |
 | Languages | GitHub Readme Stats: tỷ lệ kích thước mã theo ngôn ngữ trong các repository công khai. Không phải thời gian code hoặc mức thành thạo. |
 | Streak | Snapshot từ GitHub Readme Streak Stats: chuỗi ngày có đóng góp của `Vie-is-mee`, theo cách tính của dịch vụ. |
 | Project activity | GitHub REST API: số commit trên nhánh mặc định của UIT-ChatBot, OneVoice-Lab, SolarOpt trong 12 tuần, gồm mọi người đóng góp. Tuần bắt đầu thứ Hai theo UTC; tuần hiện tại chưa hoàn tất. Dùng committer timestamp, mỗi hàng có thang riêng. Bấm biểu đồ để xem JSON số liệu. |
