@@ -1,44 +1,36 @@
-# Hướng dẫn duy trì hồ sơ An Vi
+﻿# Biểu đồ hồ sơ An Vi
 
-README định hướng AI Engineer Intern, dùng tiếng Anh để đồng nhất với portfolio/CV hiện tại.
+README ưu tiên biểu đồ hoạt động và nhịp phát triển dự án, theo yêu cầu của người dùng. CV và portfolio chứa mô tả kinh nghiệm, nghiên cứu và thành tích chi tiết.
 
-## Cách sắp xếp
+## Các biểu đồ
 
-1. Tên, vị trí mục tiêu và đường dẫn CV/liên hệ.
-2. Chuyên môn: retrieval/RAG, machine learning và tích hợp hệ thống AI.
-3. Ba dự án theo thứ tự người dùng chọn: **UIT-ChatBot → OneVoice-Lab → SolarOpt**. Nêu bài toán, phương pháp, sản phẩm và liên kết kiểm tra; chỉ ghi vai trò cá nhân khi có nguồn xác nhận.
-4. Nghiên cứu/cuộc thi có metric và bối cảnh thứ hạng; giữ thành tích Hedge Fund ở đây thay vì phần dự án nổi bật.
-5. Công nghệ theo nhóm, học vấn và liên hệ.
-6. Biểu đồ đóng góp trong mục thu gọn cuối trang.
-
-Không đưa streak, số lượt xem, giờ code, số dòng code, snake/pacman hoặc danh sách logo dài từ Blu vào hồ sơ. Các phần này không giải thích được đóng góp kỹ thuật.
-
-## Nguồn nội dung
-
-Đối chiếu ngày 13/10/2026. Đây là nguồn công khai do chủ hồ sơ cung cấp, không phải một đợt xác minh độc lập mọi thành tích.
-
-| Nội dung | Nguồn |
+| Biểu đồ | Dữ liệu / cách đọc |
 | --- | --- |
-| Tên An Vi và vị trí AI Engineer | Người dùng xác nhận trong cuộc trò chuyện. |
-| Học vấn, thời gian học, email, LinkedIn, CV | [Portfolio nguồn](https://github.com/Vie-is-mee/NguyenVoAnVi_Portfolio/blob/main/index.html). |
-| Vai trò, 274 chunks / 84 webpages, đóng góp UIT Chatbot | Phần dự án trong portfolio; [repository](https://github.com/Vie-is-mee/UIT-ChatBot), `backend/requirements.txt` và `frontend/package.json` xác nhận cấu trúc/công nghệ. |
-| LightGBM, walk-forward, 1.45 triệu dòng, 7/982 | [README dự án](https://github.com/Vie-is-mee/Hedge-fund_Time-series-forecasting). Giữ cách diễn đạt “reported” và ghi rõ kết quả đội. |
-| OneVoice-Lab | [README](https://github.com/Vie-is-mee/OneVoice-Lab), `onevoice_runtime_bridge.py`, `requirements-runtime.txt`, `backend/requirements.txt` và [CLAIM_BOUNDARY.md](https://github.com/Vie-is-mee/OneVoice-Lab/blob/main/CLAIM_BOUNDARY.md). Mô tả chức năng hệ thống, không tự nhận vai trò cá nhân, huấn luyện mô hình, độ chính xác hoặc tốc độ chưa được xác nhận. Ghi rõ cần checkpoint R4 riêng và trạng thái thử nghiệm local. |
-| CLEF và EXACT | Phần nghiên cứu trong portfolio. Giữ nhãn kết quả được công bố trên hồ sơ, liên kết paper/leaderboard và bối cảnh “Round 2 snapshot”; chưa xác minh độc lập paper/leaderboard. |
-| SolarOpt | [README dự án](https://github.com/Vie-is-mee/SolarOpt); giữ trạng thái MVP kỹ thuật. |
+| GitHub stats | Snapshot từ GitHub Readme Stats, tài khoản `Vie-is-mee`; thống kê công khai theo cách tính của dịch vụ. Không dùng số liệu của Blu. |
+| Languages | GitHub Readme Stats: tỷ lệ kích thước mã theo ngôn ngữ trong các repository công khai. Không phải thời gian code hoặc mức thành thạo. |
+| Streak | Snapshot từ GitHub Readme Streak Stats: chuỗi ngày có đóng góp của `Vie-is-mee`, theo cách tính của dịch vụ. |
+| Project activity | GitHub REST API: số commit trên nhánh mặc định của UIT-ChatBot, OneVoice-Lab, SolarOpt trong 12 tuần, gồm mọi người đóng góp. Tuần bắt đầu thứ Hai theo UTC; tuần hiện tại chưa hoàn tất. Dùng committer timestamp, mỗi hàng có thang riêng. Bấm biểu đồ để xem JSON số liệu. |
+| Contribution landscape | Ảnh 3D do workflow `profile-3d.yml` sinh từ GitHub. Có ảnh riêng cho nền sáng/tối. |
 
-## Cập nhật trước khi ứng tuyển
+Nhịp commit thể hiện hoạt động repository, không phải phần trăm hoàn thành dự án hoặc số commit riêng của An Vi. Không tự đặt các thanh “90% Python” hoặc “80% hoàn thành” khi chưa có dữ liệu phù hợp.
 
-- Kiểm tra CV, email, LinkedIn và demo; xác nhận CV công khai là bản muốn gửi.
-- Với dự án nhóm, chỉ giữ công việc bản thân thực hiện. Bổ sung PR/commit khi có để đối chiếu vai trò.
-- Khi có số liệu mới, ghi tập dữ liệu, metric và điều kiện đo. Tách kiểm thử phần mềm khỏi chất lượng mô hình.
-- Ưu tiên repository có hướng dẫn chạy, đánh giá, kết quả và giới hạn rõ ràng.
-- Không thêm mức tăng accuracy, giảm latency, số người dùng, giải thưởng hoặc trạng thái production khi chưa có bằng chứng.
+## Tự động cập nhật
 
-## Đưa lên GitHub
+- `profile-dashboard.yml` chạy hàng ngày lúc **01:20 giờ Việt Nam** (18:20 UTC ngày trước), hoặc chạy thủ công qua Actions → Update profile dashboard → Run workflow.
+- Workflow cũng chạy khi thay đổi script hoặc cấu hình workflow trên main.
+- Script `scripts/update_dashboard.py` dùng thư viện chuẩn Python, đọc API GitHub và lưu SVG/JSON tại `assets/dashboard/`.
+- Ba thẻ tổng quan được lưu tại repository để README hiển thị được ngay cả khi dịch vụ ảnh gặp lỗi. Script giữ ảnh cũ và báo lỗi workflow khi không cập nhật được một dịch vụ; không thay bằng số liệu giả.
+- Ảnh 3D vẫn cập nhật bằng workflow riêng lúc **01:00 giờ Việt Nam**.
+- Các workflow tạo commit mới, giữ lịch sử Git; không force-push. Cần bật Actions và cho phép token của workflow ghi nội dung repository.
 
-Khi cập nhật tiếp, sử dụng checkout Git của repository **Vie-is-mee/Vie-is-mee**, lấy thay đổi mới nhất rồi commit/push các tệp `README.md`, `docs/PROFILE_GUIDE.md` và `.github/workflows/profile-3d.yml` theo nhu cầu. Tạo commit mới trên lịch sử hiện có, không force-push. Giữ thư mục `profile-3d-contrib/` để ảnh hiển thị.
+Nguồn dịch vụ: [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats), [GitHub Readme Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats), [GitHub Profile 3D Contrib](https://github.com/yoshi389111/github-profile-3d-contrib).
 
-Xem trước README trong IDE bằng **Markdown: Open Preview to the Side**. Không cần web server hoặc cài package.
+## Phạm vi
 
-Workflow chỉ cập nhật ảnh đóng góp, không sửa README. Để ảnh tự cập nhật, bật GitHub Actions và bảo đảm chính sách repository cho phép `GITHUB_TOKEN` ghi nội dung. Có thể chạy thủ công qua `workflow_dispatch`.
+Không sao chép WakaTime/AI Code Time của Blu: các dữ liệu đó thuộc tài khoản Blu. Hồ sơ này chưa được cấu hình WakaTime nên không hiển thị giờ code. Nếu bổ sung sau, cần dùng dữ liệu và khóa WakaTime của An Vi.
+
+Thông tin liên hệ và CV lấy từ [portfolio của An Vi](https://github.com/Vie-is-mee/NguyenVoAnVi_Portfolio). Ba repository nổi bật được chọn trực tiếp bởi người dùng theo thứ tự UIT-ChatBot → OneVoice-Lab → SolarOpt. OneVoice cần checkpoint R4 riêng để chạy dịch thực; SolarOpt là MVP kỹ thuật.
+
+## Cập nhật mã nguồn
+
+Lấy main mới nhất, sửa README hoặc script, kiểm tra biểu đồ rồi tạo commit mới và push bình thường. Giữ cả `assets/dashboard/` và `profile-3d-contrib/` để các ảnh nội bộ hiển thị. Xem README trong IDE bằng Ctrl+Shift+V.

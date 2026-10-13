@@ -1,0 +1,44 @@
+name: Update profile dashboard
+
+on:
+  schedule:
+    - cron: "20 18 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/update_dashboard.py
+      - .github/workflows/profile-dashboard.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-dashboard
+  cancel-in-progress: false
+
+jobs:
+  dashboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate charts from public activity
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+        run: python scripts/update_dashboard.py
+      - name: Commit dashboard snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- assets/dashboard/
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Update profile dashboard"
+          git pull --rebase origin main
+          git push origin HEAD:main
