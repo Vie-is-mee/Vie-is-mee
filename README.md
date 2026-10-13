@@ -46,15 +46,24 @@
 
 <sub>Public GitHub activity. Language share reflects repository code size; contributions and streaks show activity, not skill ratings. Cards refresh daily; cached snapshots stay visible during provider outages.</sub>
 
-## Project activity
+## Repository activity
 
 [![Weekly activity across UIT-ChatBot, OneVoice-Lab and SolarOpt](./assets/dashboard/project-activity.svg)](./assets/dashboard/project-activity.json)
+
+## Selected AI projects
 
 | Project | Focus | Explore |
 | --- | --- | --- |
 | **[UIT-ChatBot](https://github.com/Vie-is-mee/UIT-ChatBot)** | Vietnamese RAG · Gemini · FAISS · FastAPI | [Demo](https://uit-chat-bot-ilcj.vercel.app/) |
 | **[OneVoice-Lab](https://github.com/Vie-is-mee/OneVoice-Lab)** | Vietnamese–English ASR → MT → verification → TTS | [Setup & model access](https://github.com/Vie-is-mee/OneVoice-Lab#readme) |
-| **[SolarOpt](https://github.com/Vie-is-mee/SolarOpt)** | Roof geometry · shading simulation · panel layout | [Demo](https://solaropt-chi.vercel.app) |
+| **[AIC 2026](https://github.com/trietnguyeminh/AIC_saving)** | Multimodal video retrieval · AutoShot · BEiT-3 · Team 4TIU | [Team source](https://github.com/trietnguyeminh/AIC_saving) |
+
+<details>
+<summary>More projects</summary>
+
+[SolarOpt](https://github.com/Vie-is-mee/SolarOpt) · Roof geometry, shading simulation, and panel layout · [Demo](https://solaropt-chi.vercel.app)
+
+</details>
 
 ## Contribution landscape
 

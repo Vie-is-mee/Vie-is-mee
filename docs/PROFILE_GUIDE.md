@@ -31,7 +31,7 @@ Mục Tech stack & tools dùng logo SVG lưu trong `assets/tools/`, chia hai nh�
 
 Không sao chép WakaTime/AI Code Time của Blu: các dữ liệu đó thuộc tài khoản Blu. Hồ sơ này chưa được cấu hình WakaTime nên không hiển thị giờ code. Nếu bổ sung sau, cần dùng dữ liệu và khóa WakaTime của An Vi.
 
-Thông tin liên hệ và CV lấy từ [portfolio của An Vi](https://github.com/Vie-is-mee/NguyenVoAnVi_Portfolio). Ba repository nổi bật được chọn trực tiếp bởi người dùng theo thứ tự UIT-ChatBot → OneVoice-Lab → SolarOpt. OneVoice cần checkpoint R4 riêng để chạy dịch thực; SolarOpt là MVP kỹ thuật.
+Thông tin liên hệ và CV lấy từ [portfolio của An Vi](https://github.com/Vie-is-mee/NguyenVoAnVi_Portfolio). Ba dự án nổi bật theo lựa chọn mới: UIT-ChatBot → OneVoice-Lab → AIC. SolarOpt nằm trong mục mở rộng. AIC liên kết repository đội `trietnguyeminh/AIC_saving`; biểu đồ hoạt động vẫn theo dõi ba repository thuộc tài khoản Vie-is-mee (UIT-ChatBot, OneVoice-Lab, SolarOpt), độc lập với danh sách nổi bật. OneVoice cần checkpoint R4 riêng để chạy dịch thực; SolarOpt là MVP kỹ thuật.
 
 ## Cập nhật mã nguồn
 

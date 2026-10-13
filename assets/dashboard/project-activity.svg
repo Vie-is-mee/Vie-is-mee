@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="458" viewBox="0 0 1000 458" role="img" aria-labelledby="title description">
-<title id="title">Featured projects: commits by week</title>
+<title id="title">Public repositories: commits by week</title>
 <desc id="description">Twelve weeks of default-branch repository commits, all contributors. The current week is partial. Commit volume is activity, not a completion percentage.</desc>
 <rect x="1" y="1" width="998" height="456" rx="16" fill="#0d1117" stroke="#30363d"/>
 <style>text{font-family:Segoe UI,Arial,sans-serif;fill:#e6edf3}.muted{fill:#8b949e;font-size:13px}.label{font-size:17px;font-weight:600}</style>
