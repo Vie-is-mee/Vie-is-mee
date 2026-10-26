@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - scripts/update_dashboard.py
+      - scripts/test_update_dashboard.py
       - .github/workflows/profile-dashboard.yml
 
 permissions:
@@ -26,6 +27,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Test dashboard refresh failure handling
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
       - name: Generate charts from public activity
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

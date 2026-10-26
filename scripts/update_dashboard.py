@@ -3,6 +3,7 @@ import json
 import os
 import re
 import urllib.request
+from urllib.error import HTTPError
 from datetime import datetime, timedelta, timezone
 from html import escape
 from pathlib import Path
@@ -35,7 +36,15 @@ def weekly_activity(now):
         page = 1
         while True:
             query = urlencode({"since": start.isoformat() + "T00:00:00Z", "until": now.isoformat(), "per_page": 100, "page": page})
-            commits = json.loads(download(f"https://api.github.com/repos/{OWNER}/{project}/commits?{query}", github=True))
+            try:
+                commits = json.loads(download(f"https://api.github.com/repos/{OWNER}/{project}/commits?{query}", github=True))
+            except HTTPError as error:
+                if error.code != 404:
+                    raise
+                # A renamed, removed or inaccessible repository is not zero activity.
+                counts = None
+                print(f"::warning::Public activity unavailable for {project} (HTTP 404).")
+                break
             for commit in commits:
                 # GitHub's commit date is the committer timestamp, not the author timestamp.
                 timestamp = datetime.fromisoformat(commit["commit"]["committer"]["date"].replace("Z", "+00:00"))
@@ -59,6 +68,10 @@ def activity_svg(start, series, now):
              '<text x="30" y="66" class="muted">12 weeks · default-branch commits · all contributors · current week partial</text>']
     for row, (item, color) in enumerate(zip(series, COLORS)):
         top = 94 + row * 100
+        if item["weeks"] is None:
+            parts += [f'<text x="30" y="{top + 25}" class="label">{escape(item["repository"])}</text>',
+                      f'<text x="262" y="{top + 25}" class="muted">Public activity unavailable (HTTP 404)</text>']
+            continue
         total = sum(item["weeks"])
         maximum = max(max(item["weeks"]), 1)
         parts += [f'<text x="30" y="{top + 25}" class="label">{escape(item["repository"])}</text>',
@@ -103,10 +116,15 @@ def main():
         except Exception as error:
             # A provider outage must not overwrite the last usable card.
             failed.append(name)
-            print(f"Kept existing {name}: {type(error).__name__}")
-    print("Updated project activity:", ", ".join(f'{s["repository"]}={sum(s["weeks"])}' for s in series))
+            print(f"::warning::Kept existing {name}: {type(error).__name__}")
+            # Fail if there is no valid fallback rather than silently publishing a broken card.
+            cached = ET.parse(OUTPUT / name).getroot()
+            cached_words = " ".join(cached.itertext())
+            if not cached.tag.endswith("svg") or re.search(r"something went wrong|rate limit exceeded|could not fetch|error fetching|service unavailable", cached_words, re.I):
+                raise ValueError(f"No usable cached card for {name}") from error
+    print("Updated project activity:", ", ".join(f'{s["repository"]}={sum(s["weeks"]) if s["weeks"] is not None else "unavailable"}' for s in series))
     if failed:
-        raise SystemExit("Some profile cards could not refresh; existing snapshots were preserved.")
+        print("::warning::Some profile cards could not refresh; valid existing snapshots were preserved.")
 
 
 if __name__ == "__main__":
