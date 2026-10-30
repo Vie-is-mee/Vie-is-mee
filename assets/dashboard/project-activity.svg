@@ -34,7 +34,7 @@
 <text x="30" y="219" class="label">OneVoice-Lab</text>
 <text x="262" y="219" class="muted">Public activity unavailable (HTTP 404)</text>
 <text x="30" y="319" class="label">SolarOpt</text>
-<text x="30" y="343" class="muted">59 commits in this window</text>
+<text x="30" y="343" class="muted">65 commits in this window</text>
 <rect x="262" y="348.00" width="34" height="2.00" rx="3" fill="#21262d"><title>Week of 2026-08-10: 0 commits</title></rect>
 <text x="279" y="341.00" text-anchor="middle" class="muted">0</text>
 <text x="279" y="371" text-anchor="middle" class="muted">10/08</text>
@@ -68,9 +68,9 @@
 <rect x="842" y="348.00" width="34" height="2.00" rx="3" fill="#21262d"><title>Week of 2026-10-19: 0 commits</title></rect>
 <text x="859" y="341.00" text-anchor="middle" class="muted">0</text>
 <text x="859" y="371" text-anchor="middle" class="muted">19/10</text>
-<rect x="900" y="348.00" width="34" height="2.00" rx="3" fill="#21262d"><title>Week of 2026-10-26: 0 commits</title></rect>
-<text x="917" y="341.00" text-anchor="middle" class="muted">0</text>
+<rect x="900" y="341.27" width="34" height="6.73" rx="3" fill="#3fb950"><title>Week of 2026-10-26: 6 commits</title></rect>
+<text x="917" y="334.27" text-anchor="middle" class="muted">6</text>
 <text x="917" y="371" text-anchor="middle" class="muted">26/10</text>
 <text x="30" y="421" class="muted">Each row uses its own scale. Activity does not measure project completion or individual skill.</text>
-<text x="30" y="444" class="muted">Source: GitHub REST API · Updated 2026-10-29 22:47 UTC</text>
+<text x="30" y="444" class="muted">Source: GitHub REST API · Updated 2026-10-30 22:24 UTC</text>
 </svg>
