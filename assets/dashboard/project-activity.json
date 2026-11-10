@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-08T22:10:15+00:00",
-  "first_week": "2026-08-17",
+  "updated_at": "2026-11-10T01:35:52+00:00",
+  "first_week": "2026-08-24",
   "scope": "default branch, all contributors, committer timestamp",
   "projects": [
     {
@@ -30,7 +30,6 @@
         0,
         0,
         0,
-        0,
         1,
         0,
         0,
@@ -38,7 +37,8 @@
         17,
         0,
         41,
-        74
+        74,
+        0
       ]
     }
   ]
